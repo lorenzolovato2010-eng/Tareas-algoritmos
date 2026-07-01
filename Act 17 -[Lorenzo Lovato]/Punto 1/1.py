@@ -1,30 +1,33 @@
 """
 1. Se tiene la siguiente lista:
 lista=[[100,7,85,8], [4,8,56,25], [67,89,23,1], [78,56]]
-Imprimir la lista. Luego cambiar de elemento todos los enteros mayores a 50 del
-primer elemento de &quot;lista&quot;. El resto de enteros menores a 50 deben encontrarse
-en una nueva posición dentro de la lista.
+Imprimir la lista. Luego fijar con el valor cero todos los elementos mayores a 50
+del primer elemento de "lista";.
 Volver a imprimir la lista.
 """
-lista = [[100,7,85,8], [4,8,56,25], [67,89,23,1], [78,56]]
+aux=0
+lista=[[100,7,85,8], [4,8,56,25], [67,89,23,1], [78,56]]
+listaAux=[]
 
-print("Lista original:")
+print("Lista")
 print(lista)
+print("--------")
+i=0
+x=0
 
-mayores = []
-menores = []
-
-for n in lista[0]:
-    if n > 50:
-        mayores.append(n)
-    else:
-        menores.append(n)
+posicion=0
 
 
-lista[0] = mayores
+for x in range(len(lista)):
+    nuevaAux=[]
+    for i in lista[x]:
+        if i > 50:
+            listaAux.append(i)
+        else:
+            nuevaAux.append(i)
+    lista[x]=nuevaAux
 
+lista[0]=listaAux
 
-lista.append(menores)
-
-print("Lista modificada:")
 print(lista)
+    
