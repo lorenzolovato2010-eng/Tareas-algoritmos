@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js" defer></script>
+
+</head>
+<body>
+<form>
+<p>1.¿Cual les la capital de Francia?</p>
+<select id="p1">
+<option value="incorrecta"> Madrid</option>
+<option value="correcta"> Paris </option>
+<option value="incorrecta"> Roma </option>
+</select>
+
+<p>2.¿Cuanto es 2+2?</p>
+<select id="p2">
+<option value="incorrecta"> 1</option>
+<option value="correcta"> 4 </option>
+<option value="incorrecta"> 7 </option>
+</select>
+
+<p>3.¿De que color son los minions?</p>
+<select id="p3">
+<option value="correcta"> Amarillo </option>
+<option value="incorrecta"> Rojo </option>
+<option value="incorrecta"> Celeste </option>
+</select>
+
+<p>4.¿Como se llama el profe de Algoritmos de 4°12?</p>
+<select id="p4">
+<option value="correcta"> Lucas Manuel Strano Rey </option>
+<option value="incorrecta"> Tomassella </option>
+<option value="incorrecta"> Galacho </option>
+</select>
+
+<p><input type="button" value="Calcular" onclick="corregir()"></p>
+
+<p>Correctas: <input type="text" id="cantCorrectas"></p>
+<p>Incorrectas: <input type="text" id="cantIncorrectas"></p>
+</form>
+</body>
+</html>
+
